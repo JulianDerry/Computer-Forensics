@@ -1,3 +1,47 @@
+| Property | Value |
+|----------|-------|
+| Case ID | HIVE-2026-BF-0117 |
+| Investigation Type | USB Digital Forensics |
+| Filesystem | FAT32 |
+| Evidence | E01 Disk Image |
+| Primary Tool | Autopsy 4.22.1 |
+| Secondary Tools | Sleuth Kit, sqlite3, Python |
+| Time Period | 15–20 September 2023 |
+| Analyst | Julian Derry |
+| Status | Completed |
+
+# Table of Contents
+
+- [Repository Structure](#repository-structure)
+- [Executive Summary](#executive-summary)
+- [Scope & Objectives](#scope--objectives)
+- [Evidence](#evidence)
+  - [Evidence Acquisition](#evidence-acquisition)
+- [Methodology](#methodology)
+  - [Tools Used](#tools-used)
+- [Findings](#findings)
+  - [Finding 5.1 – Last Known Activity](#finding-51--last-known-activity)
+  - [Finding 5.2 – Exit Plan Browsing Pattern](#finding-52--exit-plan-browsing-pattern)
+  - [Finding 5.3 – Personal Cloud Storage and Initial Access](#finding-53--personal-cloud-storage-and-initial-access-dropbox-upload)
+  - [Finding 5.4 – Typed vs Link Navigation](#finding-54--typed-vs-link-navigation-intent-versus-accident)
+  - [Finding 5.5 – eBay Session Reconstruction](#finding-55--ebay-session-reconstruction)
+  - [Finding 5.6 – Exfiltrated Data: Client Spreadsheet](#finding-56--exfiltrated-data-client-spreadsheet)
+  - [Finding 5.7 – Purchase Confirmation](#finding-57--purchase-confirmation)
+  - [Finding 5.8 – Documented Intent to Leave](#finding-58--documented-intent-to-leave)
+  - [Finding 5.9 – Exfiltration Channel: Self-Addressed Email](#finding-59--exfiltration-channel-self-addressed-email)
+  - [Finding 5.10 – Timestamp Investigation](#finding-510--timestamp-investigation-tool-limitation-not-evidence-tampering)
+- [Examiner's Concerns](#examiners-concerns)
+  - [File Size Mismatch](#file-size-mismatch)
+  - [Filename Inconsistency](#filename-inconsistency)
+  - [FAT32 vs NTFS](#fat32-vs-ntfs)
+  - [Evidence Labels](#evidence-labels)
+  - [Verify Your Tools](#verify-your-tools)
+- [Timeline](#timeline)
+  - [Investigation Timeline](#investigation-timeline)
+- [Conclusion](#conclusion)
+
+---
+
 # USB Digital Forensics Investigation
 ## Adinkra Microfinance Ltd
 
