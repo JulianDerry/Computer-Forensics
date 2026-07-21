@@ -51,7 +51,8 @@ Note: this is a synthetic training exhibit, not real custody evidence. The hash 
 |:------:|-------------|--------|-------------|---------------|-------------|
 | 1 | **HIVE-2026-BF-0117-USB.E01** | Synthetic training exhibit, HIVE CONSULT | **Container (SHA-256):** `00B16EF7B2E3707C09C0F97B56285F653A33011545A45813450BC6F89A131A07`<br>**Media (MD5):** `f1336b78c7b9771d0f1c6c78c116b479`<br>**Media (SHA-1):** `6f3aba0cb15869372dd1311674e9a353e7ec641a` | 14 Jul 2026, 10:11:18 | HIVE CONSULT |
 
-![Web History](images/webhistory.png)
+<img width="1612" height="272" alt="Screenshot 2026-07-18 145502" src="https://github.com/user-attachments/assets/502045c0-b607-4f9e-8243-b65521c6434c" />
+
 
 ---
 
