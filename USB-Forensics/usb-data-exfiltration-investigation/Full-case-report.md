@@ -124,7 +124,6 @@ Evidence: Attribution is established two ways: the URL directory pattern (dropbo
 
 
 Interpretation: Dropbox access predates the exfiltration event by roughly three months, consistent with routine personal use of the service before it was repurposed as an exfiltration channel on 18 September 2023
-Explanation...
 
 ---
 
@@ -136,7 +135,6 @@ Evidence: Web History transition data for both URLs.
 <img width="1917" height="1031" alt="Screenshot 2026-07-18 154934" src="https://github.com/user-attachments/assets/731db97f-ea39-4c3d-9480-4075a4f9d48d" /> Typed vs. link visit evidence.
 
 Interpretation: A ‘Typed’ visit requires the user to know and enter the address directly, indicating prior intent to visit that specific site. A ‘Link’ visit can result from incidental browsing and carries less evidential weight on its own.
-Explanation...
 
 ---
 
@@ -149,7 +147,6 @@ Evidence: Web History (corrected): search “laptop for sale” at 2023-09-19 09
 <img width="1032" height="60" alt="db2" src="https://github.com/user-attachments/assets/fa7d4214-b643-412b-886d-279f794f9d99" /> Corrected UTC timestamps for the eBay rows.
 
 Interpretation: The date/time originally reported here during initial review (10/22, 14:56:40 and 16:36:40) came from Autopsy's raw SQLite table viewer, which does not decode Chrome's WebKit epoch correctly. Re-querying the History database directly confirms the question's stated date, 19 September 2023, is correct: there is no date discrepancy. See Finding 5.10 for the full explanation.
-Explanation...
 
 ---
 
@@ -164,7 +161,6 @@ Evidence: File location: /Personal/Client_Data/Adinkra_Client_Master_List.xlsx. 
 
 
 Interpretation: The existence of this file on the subject's personal USB drive, combined with the export search and the Dropbox upload activity, is consistent with data having been moved from the workstation FIN-WS-07 to both a personal cloud account and this drive.
-Explanation...
 
 ---
 
@@ -176,7 +172,6 @@ Evidence: Receipt_eBay_ThinkPad_P50s.png, order #12-11834-95027, ordered 19 Sep 
 <img width="820" height="1120" alt="Receipt_eBay_ThinkPad_P50s" src="https://github.com/user-attachments/assets/82bbf3ed-dcaa-4b61-a341-ccb5c6286ac6" /> <br> eBay order confirmation receipt.
 
 Interpretation: The receipt timestamp sits six to nineteen seconds after the corrected browser timestamps for the same item, consistent with a genuine search-to-purchase flow and inconsistent with any timestamp manipulation.
-Explanation...
 
 ---
 
@@ -196,7 +191,6 @@ Three separate documents on the drive show concrete steps toward resignation and
 <img width="1919" height="1026" alt="Screenshot 2026-07-19 143839" src="https://github.com/user-attachments/assets/ff7c3fe7-18fa-4085-b483-a1c3516cc982" />
 
 Interpretation: The email, the Dropbox upload screenshot (Finding 5.6), and the Web History entry for dropbox.com/upload are three independent artifacts describing the same event, sent seven minutes after the upload page was visited, which is strong corroboration that the upload was deliberate and that the subject intended to resign shortly afterward.
-Explanation...
 
 ---
 
@@ -207,9 +201,6 @@ Evidence: Email_Dropbox_ShareLink.pdf, sent from and to kwabena.asare.gh@gmail.c
 
 Interpretation: The email, the Dropbox upload screenshot (Finding 5.6), and the Web History entry for dropbox.com/upload are three independent artifacts describing the same event, sent seven minutes after the upload page was visited, which is strong corroboration that the upload was deliberate and that the subject intended to resign shortly afterward.
 
-![Email](images/email.png)
-
-Explanation...
 
 ---
 
@@ -218,10 +209,8 @@ An apparent date/time inconsistency identified during initial review (affecting 
 
 Evidence: Chrome/WebKit stores browser timestamps as microseconds since 1601-01-01, not the Unix epoch. Autopsy's raw SQLite table viewer (File Metadata > Application > Table: urls) does not decode this correctly and renders a garbled six-digit year. Re-extracting the History database directly and decoding it with the query datetime(last_visit_time/1000000-11644473600,'unixepoch') produces timestamps that match the vendor receipts to within seconds.
 
-![Timestamp Bug](images/autopsy_bug.png)
 
 Interpretation: The discrepancy originated in the examination tool's raw table view, not in the underlying evidence. No time-stomping or anti-forensic activity is indicated; browser activity and receipts are tightly self-consistent throughout the case.
-Explanation...
 
 ---
 
