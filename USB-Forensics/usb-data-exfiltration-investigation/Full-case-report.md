@@ -1,9 +1,5 @@
-# Adinkra Microfinance Ltd
-## USB Digital Forensics Investigation
-
-![Cover](images/cover.png)
-
----
+# USB Digital Forensics Investigation
+## Adinkra Microfinance Ltd
 
 # Executive Summary
 
