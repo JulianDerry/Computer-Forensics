@@ -51,7 +51,7 @@ Note: this is a synthetic training exhibit, not real custody evidence. The hash 
 |:------:|-------------|--------|-------------|---------------|-------------|
 | 1 | **HIVE-2026-BF-0117-USB.E01** | Synthetic training exhibit, HIVE CONSULT | **Container (SHA-256):** `00B16EF7B2E3707C09C0F97B56285F653A33011545A45813450BC6F89A131A07`<br>**Media (MD5):** `f1336b78c7b9771d0f1c6c78c116b479`<br>**Media (SHA-1):** `6f3aba0cb15869372dd1311674e9a353e7ec641a` | 14 Jul 2026, 10:11:18 | HIVE CONSULT |
 
-<img width="1612" height="272" alt="Screenshot 2026-07-18 145502" src="https://github.com/user-attachments/assets/502045c0-b607-4f9e-8243-b65521c6434c" />
+<img width="1612" height="272" alt="Screenshot 2026-07-18 145502" src="https://github.com/user-attachments/assets/502045c0-b607-4f9e-8243-b65521c6434c" /> Independent hash verification of the container file.
 
 
 ---
@@ -87,13 +87,17 @@ Evidence: Web History: title “Latest News”, URL https://www.formula1.com/en/
 
 Source path: /Users/kasare/AppData/Local/Google/Chrome/User Data/Default/History.
 
-![Web History](images/webhistory.png)
+<img width="1918" height="1029" alt="Screenshot 2026-07-18 152216" src="https://github.com/user-attachments/assets/d6904e24-c418-468b-bc4c-377d1fbdde2e" /> History file location and metadata. 
 
 Interpretation: This is the final entry in the subject's browsing history and marks the end of the reconstructed session on 19 September 2023.
 
-## Browser Search Activity
 
-## Browser Search Activity
+---
+
+# Finding 5.2 – Exit Plan Browsing Pattern
+Observation: Five search terms in the history indicate the subject was researching new employment and independently starting a competing accounting practice; leisure searches were excluded.
+
+<img width="1910" height="1029" alt="Screenshot 2026-07-18 154546" src="https://github.com/user-attachments/assets/b4b610b1-67ab-4084-bd63-8c0cb5b4fae0" /> Search-term evidence from Web History. 
 
 | URL | Page Title |
 |------|------------|
@@ -103,29 +107,21 @@ Interpretation: This is the final entry in the subject's browsing history and ma
 | `linkedin.com/jobs/` | Jobs \| LinkedIn |
 | `google.com/search?q=forensic+accounting+jobs+accra` | Forensic Accounting Jobs Accra - Google Search |
 
-Explanation...
-
----
-
-# Finding 5.2 – Exit Plan Browsing Pattern
-Observation: Five search terms in the history indicate the subject was researching new employment and independently starting a competing accounting practice; leisure searches were excluded.
-
-Evidence: Web History url/title table
-
-![Google Searches](images/google_searches.png)
-
 Interpretation: The combination of job-search terms and a business-formation search shows deliberate research into both leaving the company and competing with it, not incidental browsing.
 
-Explanation...
-
 ---
 
-# Finding 5.3 – Dropbox Upload
+# Finding 5.3 – Personal cloud storage and initial access (Dropbox Upload)
 Dropbox was the personal cloud service used by the subject, first accessed 2023-06-20 09:09:05 UTC and visited eight times in total.
 
 Evidence: Attribution is established two ways: the URL directory pattern (dropbox.com/upload) and the saved Chrome credential for kwabena.asare.gh@gmail.com against dropbox.com/login. The corrected first-access timestamp is independently corroborated by the Dropbox Plus payment receipt, billing date 20 Jun 2023.
 
-![Dropbox](images/dropbox_upload.png)
+<img width="1917" height="1031" alt="Screenshot 2026-07-18 154934" src="https://github.com/user-attachments/assets/cba04240-bfec-404a-87cd-36cf165e5a0b" /> Url Data: Dropbox upload directory attribution. 
+
+<img width="1918" height="1028" alt="Screenshot 2026-07-18 155601" src="https://github.com/user-attachments/assets/308291f5-bc1e-4da9-9317-412519cd3ce1" /> Login Data: Dropbox credential attribution. 
+
+<img width="1497" height="662" alt="Screenshot 2026-07-18 164407" src="https://github.com/user-attachments/assets/5ab15ff3-d5d7-44f5-8007-328201056e8e" /> Dropbox visit count from Web History.
+
 
 Interpretation: Dropbox access predates the exfiltration event by roughly three months, consistent with routine personal use of the service before it was repurposed as an exfiltration channel on 18 September 2023
 Explanation...
@@ -137,14 +133,15 @@ Of the two job-search sites in the history, jobberman.com.gh was reached by dire
 
 Evidence: Web History transition data for both URLs.
 
-![Transition](images/navigation.png)
+<img width="1917" height="1031" alt="Screenshot 2026-07-18 154934" src="https://github.com/user-attachments/assets/731db97f-ea39-4c3d-9480-4075a4f9d48d" /> Typed vs. link visit evidence.
 
 Interpretation: A ‘Typed’ visit requires the user to know and enter the address directly, indicating prior intent to visit that specific site. A ‘Link’ visit can result from incidental browsing and carries less evidential weight on its own.
 Explanation...
 
 ---
 
-# Finding 5.5 – eBay Session Reconstruction
+# Finding 5.5 – eBay Session Reconstruction![Uploading Screenshot 2026-07-18 152216.png…]()
+
 The subject searched eBay for a laptop and viewed a specific listing: a Lenovo ThinkPad P50s at £589.99.
 
 Evidence: Web History (corrected): search “laptop for sale” at 2023-09-19 09:55:37 UTC, item view at 2023-09-19 09:55:43 UTC, reached via referrer from the search six seconds earlier.
