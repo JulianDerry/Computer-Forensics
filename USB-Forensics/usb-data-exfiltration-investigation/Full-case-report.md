@@ -140,13 +140,13 @@ Explanation...
 
 ---
 
-# Finding 5.5 – eBay Session Reconstruction![Uploading Screenshot 2026-07-18 152216.png…]()
+# Finding 5.5 – eBay Session Reconstruction
 
 The subject searched eBay for a laptop and viewed a specific listing: a Lenovo ThinkPad P50s at £589.99.
 
 Evidence: Web History (corrected): search “laptop for sale” at 2023-09-19 09:55:37 UTC, item view at 2023-09-19 09:55:43 UTC, reached via referrer from the search six seconds earlier.
 
-![eBay](images/ebay_history.png)
+<img width="1032" height="60" alt="db2" src="https://github.com/user-attachments/assets/fa7d4214-b643-412b-886d-279f794f9d99" /> Corrected UTC timestamps for the eBay rows.
 
 Interpretation: The date/time originally reported here during initial review (10/22, 14:56:40 and 16:36:40) came from Autopsy's raw SQLite table viewer, which does not decode Chrome's WebKit epoch correctly. Re-querying the History database directly confirms the question's stated date, 19 September 2023, is correct: there is no date discrepancy. See Finding 5.10 for the full explanation.
 Explanation...
@@ -158,7 +158,10 @@ A spreadsheet of customer data, Adinkra_Client_Master_List.xlsx, was recovered i
 
 Evidence: File location: /Personal/Client_Data/Adinkra_Client_Master_List.xlsx. Its presence is corroborated by the QuickBooks-export search (Finding 5.2 window) and by the Dropbox upload page visited at 2023-09-18 14:33:20 UTC.
 
-![Spreadsheet](images/client_data.png)
+<img width="1916" height="1032" alt="Screenshot 2026-07-19 124644" src="https://github.com/user-attachments/assets/fcfba753-0e6a-4a41-8ec7-568cbf451e3e" /> Client_Data folder listing on the USB drive.
+
+<img width="1919" height="1030" alt="Screenshot 2026-07-19 135751" src="https://github.com/user-attachments/assets/21c1bb33-6953-4db9-b662-357c9540e50a" /> Dropbox upload confirmation screenshot.
+
 
 Interpretation: The existence of this file on the subject's personal USB drive, combined with the export search and the Dropbox upload activity, is consistent with data having been moved from the workstation FIN-WS-07 to both a personal cloud account and this drive.
 Explanation...
@@ -170,7 +173,7 @@ The ThinkPad viewed on eBay (Finding 5.5) was purchased the same session.
 
 Evidence: Receipt_eBay_ThinkPad_P50s.png, order #12-11834-95027, ordered 19 Sep 2023 09:56 UTC. Item total GBP 634.19 with import charges, GBP 589.99 without, matching the listing viewed in Finding 5.5.
 
-![Receipt](images/receipt.png)
+<img width="820" height="1120" alt="Receipt_eBay_ThinkPad_P50s" src="https://github.com/user-attachments/assets/82bbf3ed-dcaa-4b61-a341-ccb5c6286ac6" /> <br> eBay order confirmation receipt.
 
 Interpretation: The receipt timestamp sits six to nineteen seconds after the corrected browser timestamps for the same item, consistent with a genuine search-to-purchase flow and inconsistent with any timestamp manipulation.
 Explanation...
@@ -182,11 +185,15 @@ Three separate documents on the drive show concrete steps toward resignation and
 
 (1) Receipt_RGD_Business_Registration.png and RGD_Business_Name_Application.pdf, business name registration filed 18 September 2023, corroborated by the “starting an accounting firm in ghana” search the same day.
 
+<img width="1916" height="1005" alt="Screenshot 2026-07-19 143848" src="https://github.com/user-attachments/assets/634a3537-f7f8-44da-a8b0-8dfe7117b2c6" />
+
 (2) Sankofa_Accounting_Business_Plan.pdf, a business plan for the registered entity, SANKOFA ACCOUNTING & ADVISORY. 
+
+<img width="1919" height="1019" alt="Screenshot 2026-07-19 143919" src="https://github.com/user-attachments/assets/4eec4089-e739-45ef-a8a4-c0f2e085e292" />
 
 (3) Resignation_Letter_DRAFT.pdf, drafted 20 September 2023, two days after the registration filing, not yet sent, with an effective resignation date of 6 October 2023.
 
-![Business Registration](images/business_registration.png)
+<img width="1919" height="1026" alt="Screenshot 2026-07-19 143839" src="https://github.com/user-attachments/assets/ff7c3fe7-18fa-4085-b483-a1c3516cc982" />
 
 Interpretation: The email, the Dropbox upload screenshot (Finding 5.6), and the Web History entry for dropbox.com/upload are three independent artifacts describing the same event, sent seven minutes after the upload page was visited, which is strong corroboration that the upload was deliberate and that the subject intended to resign shortly afterward.
 Explanation...
