@@ -257,9 +257,7 @@ Verification: rather than treating the displayed date as authoritative, the raw 
 This was a display bug in the examination tool, not a defect in the evidence. The exhibit's creator was also contacted and corroborated the observation.
 Examiner's note: good forensic work is not just about finding evidence, it is about validating every observation, testing the assumptions behind it, and making sure each conclusion can withstand scrutiny. That is what keeps an unresolved anomaly from becoming an opening for the defense.
 
-![Autopsy Timestamp](images/autopsy_timestamp.png)
 
-...
 
 ---
 
