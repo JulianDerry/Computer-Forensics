@@ -1,12 +1,12 @@
-  Property              Value
-  --------------------- ------------------------------------------------
-  Document Type         Digital Forensics & Incident Response Research
-  Investigation Topic   Detecting and Analyzing Timestomping
-  Filesystem            NTFS
-  Primary Tools         KAPE, MFTECmd, Timeline Explorer
-  Analyst               Julian Derry
-  Date                  June 2026
-  Status                Completed
+| Property | Value |
+|----------|-------|
+| Document Type | Digital Forensics & Incident Response |
+| Investigation Type | NTFS Timestomping Analysis |
+| Primary Tools | KAPE, MFTECmd, Timeline Explorer |
+| Filesystem | NTFS |
+| Analyst | Julian Derry |
+| Date | June 2026 |
+| Status | Completed |
 
 # Table of Contents
 
