@@ -318,12 +318,6 @@ USB related artifacts including connection history, LastWrite timestamps, Instal
 
 Prior to this investigation, I produced a separate technical guide documenting registry transaction log replay and dirty hive recovery.
 
-Reference:
-
-
-<href="https://github.com/JulianDerry/Computer-Forensics/blob/main/Ntfs-Timestomping-Detection-Kape/ntfs-timestomping-detection-kape.pdf">
-
-
 **NB**
 
 The SYSTEM hive contained the registry value **NtfsDisableLastAccessUpdate** with a value of **2147483650 (0x80000002)**.
