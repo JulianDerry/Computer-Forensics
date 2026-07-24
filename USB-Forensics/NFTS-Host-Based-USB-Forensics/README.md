@@ -1,4 +1,4 @@
-# Windows USB Activity Analysis Using KAPE and Eric Zimmerman Tools
+# NFTS-Host-Based-USB-Forensics (Activity Analysis Using KAPE and Eric Zimmerman Tools)
 
 A host based Windows USB forensic investigation performed against an acquired E01 image to identify USB device activity, reconstruct the timeline, determine user interaction and analyze artifacts using KAPE, Registry Explorer, Eric Zimmerman tools, USB Detective and Timeline Explorer.
 
