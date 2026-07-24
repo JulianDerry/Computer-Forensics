@@ -59,9 +59,8 @@ A host based Windows USB forensic investigation performed against an acquired E0
 
 > **Figure 1. Host machine details**
 
-```
-Insert screenshot here
-```
+
+<img width="889" height="919" alt="Screenshot 2026-07-20 133537" src="https://github.com/user-attachments/assets/4976c3ec-106e-4156-9e5d-b9799b398f7c" />
 
 ---
 
