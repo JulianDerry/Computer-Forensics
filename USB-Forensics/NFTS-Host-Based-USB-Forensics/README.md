@@ -320,11 +320,9 @@ Prior to this investigation, I produced a separate technical guide documenting r
 
 Reference:
 
-```
-Registry Transaction Log Replay (Dirty Hive Recovery)
 
-Insert documentation link
-```
+<href="https://github.com/JulianDerry/Computer-Forensics/blob/c20274cffc587599f6d2c223071bdf234d595e2c/Ntfs-Timestomping-Detection-Kape/ntfs-timestomping-detection-kape.pdf"
+
 
 **NB**
 
