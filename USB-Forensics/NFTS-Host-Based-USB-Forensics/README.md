@@ -302,6 +302,9 @@ The timestamps aligned with the USB activity.
 No files were copied between the USB and the computer.
 
 Both Local Path and TargetID Absolute Path showed only:
+```text
+E:\
+```
 
 ---
 
