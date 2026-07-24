@@ -79,10 +79,8 @@ I acquired an E01 image, calculated the hash value using MD5 and SHA256 and veri
 | Examiner | JULIAN DERRY |
 
 > **Figure 2. FTK Imager acquisition**
-
-```
-Insert screenshot here
-```
+<img width="1418" height="739" alt="Screenshot 2026-07-20 134029" src="https://github.com/user-attachments/assets/6e15123d-8874-4349-9d78-51f7e2acc383" />
+<img width="837" height="398" alt="Screenshot 2026-07-20 141120" src="https://github.com/user-attachments/assets/400b4e91-e192-413c-8427-2724c14995ad" />
 
 ---
 
@@ -96,9 +94,8 @@ In this case, my mount image showed up as **F:**
 
 > **Figure 3. Arsenal Image Mounter configuration**
 
-```
-Insert screenshot here
-```
+<img width="987" height="555" alt="Screenshot 2026-07-20 143621" src="https://github.com/user-attachments/assets/7776cf83-14c3-410d-b1f2-837bffaa7f94" />
+<img width="973" height="553" alt="Screenshot 2026-07-20 143634" src="https://github.com/user-attachments/assets/da240c55-3b79-4236-ad72-9f3666a2aeef" />
 
 ---
 
@@ -120,10 +117,9 @@ Under Module, I selected **EZParser**.
 I also added USBDetective Windows App for redundancy and USBDevicesLogs for redundancy of USB artifacts and logs.
 
 > **Figure 4. KAPE collection configuration**
-
-```
-Insert screenshot here
-```
+> 
+<img width="1919" height="1078" alt="Screenshot 2026-07-20 150150" src="https://github.com/user-attachments/assets/eea9b3f0-8e42-4241-9b19-4c9ce2f29a6e" />
+<img width="983" height="511" alt="Screenshot 2026-07-20 150302" src="https://github.com/user-attachments/assets/7e499d50-2349-4f9d-a833-0f7e60745b5e" />
 
 ---
 
@@ -142,9 +138,7 @@ Inside the Module Output folder were several folders categorized with CSV files 
 
 > **Figure 5. Timeline Explorer**
 
-```
-Insert screenshot here
-```
+<img width="1122" height="635" alt="Screenshot 2026-07-20 151943" src="https://github.com/user-attachments/assets/04c504d3-5edf-4516-af66-3de6a9aa7cce" />
 
 ---
 
@@ -187,15 +181,11 @@ I later came to learn that the serial number can be easily identified by looking
 
 > **Figure 6. USBSTOR Registry key**
 
-```
-Insert screenshot here
-```
+<img width="1917" height="1032" alt="Screenshot 2026-07-20 162152" src="https://github.com/user-attachments/assets/4b3e93db-c9e8-4b2d-aa13-586b32b2d3f1" />
 
 > **Figure 7. USB Detective verification**
 
-```
-Insert screenshot here
-```
+<img width="1920" height="1029" alt="Screenshot 2026-07-20 173108" src="https://github.com/user-attachments/assets/8dfed179-7913-413a-88ad-5fb42d51fcec" />
 
 ---
 
@@ -221,9 +211,7 @@ My guess is the first option because the other drives had letters successfully a
 
 > **Figure 8. MountedDevices**
 
-```
-Insert screenshot here
-```
+<img width="1914" height="916" alt="Screenshot 2026-07-21 173242" src="https://github.com/user-attachments/assets/9ac6aed1-5290-4bb7-873b-14adfd9c0eaf" />
 
 ---
 
@@ -270,9 +258,7 @@ Under **Target Name** in **NTUSER.DAT.csv**, files I accessed were also visible 
 
 > **Figure 9. LECmd output**
 
-```
-Insert screenshot here
-```
+<img width="1915" height="476" alt="Screenshot 2026-07-22 230112" src="https://github.com/user-attachments/assets/8a806480-2ff4-4255-be74-ac8d8e705dec" />
 
 ---
 
@@ -289,9 +275,7 @@ This was the only user profile that appeared in:
 
 > **Figure 10. User artifacts**
 
-```
-Insert screenshot here
-```
+<img width="1897" height="337" alt="Screenshot 2026-07-22 230559" src="https://github.com/user-attachments/assets/571458bf-73ad-4c18-96a5-c9254252a6f4" />
 
 ---
 
@@ -309,9 +293,7 @@ The timestamps aligned with the USB activity.
 
 > **Figure 11. AutomaticDestinations.csv**
 
-```
-Insert screenshot here
-```
+<img width="1908" height="863" alt="Screenshot 2026-07-24 181521" src="https://github.com/user-attachments/assets/83ccea5f-b907-42d3-85f1-b6fa921a615a" />
 
 ---
 
@@ -320,16 +302,6 @@ Insert screenshot here
 No files were copied between the USB and the computer.
 
 Both Local Path and TargetID Absolute Path showed only:
-
-```text
-E:\
-```
-
-> **Figure 12. LNK analysis**
-
-```
-Insert screenshot here
-```
 
 ---
 
