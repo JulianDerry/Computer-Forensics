@@ -321,7 +321,7 @@ Prior to this investigation, I produced a separate technical guide documenting r
 Reference:
 
 
-<href="https://github.com/JulianDerry/Computer-Forensics/blob/c20274cffc587599f6d2c223071bdf234d595e2c/Ntfs-Timestomping-Detection-Kape/ntfs-timestomping-detection-kape.pdf"
+<href="https://github.com/JulianDerry/Computer-Forensics/blob/3ba1792cc7e6009a4a7526d907efca2c08516a6e/Ntfs-Timestomping-Detection-Kape/README.md">
 
 
 **NB**
