@@ -5,7 +5,3 @@ Windows, Linux, memory, and disk forensics — registry, browser, event log, and
 Part of the [Digital-Forensics](../) collection of repositories:
 `Computer-Forensics` · `Mobile-Forensics` · `Cloud-Forensics` · `Vehicle-Forensics`
 
-
-## Contributing / Usage
-
-Add write-ups, scripts, and case notes into the relevant subfolder above. Keep tool-specific output (e.g. KAPE, Autopsy, Cellebrite exports) under `Tools/` or `Case-Reports/` as appropriate.
