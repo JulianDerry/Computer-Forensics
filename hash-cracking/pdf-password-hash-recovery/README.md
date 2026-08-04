@@ -62,8 +62,7 @@ Recover the password protecting `logs_protected.pdf` by extracting its hash and 
 
 - **Target File:** `logs_protected.pdf`
 - **Source:** @redhadpentester / @hiveconsult
-- **Analysis Date:** February 17, 2026
-- **Analysis Time:** 11:40 AM
+- **Analysis Date:** February 19, 2026
 
 ---
 
