@@ -128,6 +128,7 @@ This command performed a wordlist attack using the **rockyou.txt** password list
 ### Screenshot 5 – Hashcat Cracking Process
 
 <img width="903" height="135" alt="5" src="https://github.com/user-attachments/assets/b0bc129c-5708-4665-b17f-76ada0ccbd33" />
+<img width="899" height="443" alt="9" src="https://github.com/user-attachments/assets/e98be173-3902-41e6-bc16-4602bbee9e46" />
 
 ---
 
