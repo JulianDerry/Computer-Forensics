@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Case Reference** | PDF Password Hash Recovery |
+| **Case Reference** | PDF Password Recovery (MD5 Hash Recovery)|
 | **Image Source** | HIVE CONSULT |
 | **Investigator** | Julian Derry |
 | **Date of Analysis** | ‎February ‎19, ‎2026 |
