@@ -38,8 +38,6 @@ The output revealed a suspicious **Comment** field:
 ```text
 c3Rle2hpZGU6cEF6endvcmV9
 ```
-<img width="538" height="62" alt="3" src="https://github.com/user-attachments/assets/4f653c8f-1683-4efb-8232-ceda39244b00" />
-
 
 This string appeared to be Base64-encoded.
 
@@ -52,7 +50,8 @@ Decode the metadata value:
 ```bash
 echo c3Rle2hpZGU6cEF6endvcmV9 | base64 -d
 ```
-<img width="358" height="84" alt="4" src="https://github.com/user-attachments/assets/2902a7cc-50ea-4f58-872a-d3bc401e2611" />
+<img width="538" height="62" alt="3" src="https://github.com/user-attachments/assets/5da0a30f-e210-42e1-93d3-9248a970fbee" />
+
 
 Result:
 
