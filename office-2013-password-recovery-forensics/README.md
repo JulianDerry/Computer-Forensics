@@ -7,9 +7,9 @@
 | **Investigator** | Julian Derry |
 | **Date of Analysis** | ‎February ‎16, ‎2026 |
 | **Platform** | Kali Linux |
+| **Tools** | office2john, Hashcat, John the Ripper, rockyou.txt, Linux command-line shell |
 ---
 
-## Overview
 
 This examination documents the recovery of a password-protected Microsoft Office 2013 document through offline password cracking techniques. The process involved identifying the encryption type, extracting the Office hash, selecting the correct cracking mode, and validating successful decryption.
 
@@ -29,7 +29,7 @@ Subsequent analysis confirmed that the encryption used:
 
 ### Screenshot 1 – Password Prompt
 
-![Encrypted Word Document Prompt](images/01-password-prompt.png)
+<img width="597" height="274" alt="1" src="https://github.com/user-attachments/assets/cc971e57-5702-40f1-aaa1-312b479536df" />
 
 ---
 
@@ -58,7 +58,7 @@ The full hash was saved to a text file while preserving the complete `$office$` 
 
 ### Screenshot 2 – office2john Hash Extraction
 
-![office2john Output](images/02-office2john-output.png)
+<img width="926" height="138" alt="2" src="https://github.com/user-attachments/assets/4c6d1608-0379-42fc-a646-bba275d7903c" />
 
 ---
 
@@ -76,7 +76,7 @@ echo '$office$*2013*100000*256*16*...' > officehash.txt
 
 ### Screenshot 3 – Hash Saved to officehash.txt
 
-![Hash File Creation](images/03-officehash-file.png)
+<img width="690" height="130" alt="3" src="https://github.com/user-attachments/assets/8a2ac271-102f-4970-9208-b8e207d784c2" />
 
 ---
 
@@ -98,7 +98,7 @@ Using an incorrect mode would prevent successful cracking even if the password w
 
 ### Screenshot 4 – Hashcat Mode Verification
 
-![Hashcat Help Output](images/04-hashcat-mode.png)
+<img width="702" height="243" alt="4" src="https://github.com/user-attachments/assets/77572e89-7fc8-496a-92ec-1f05ae0213eb" />
 
 ---
 
@@ -116,7 +116,7 @@ This command performed a wordlist attack using the **rockyou.txt** password list
 
 ### Screenshot 5 – Hashcat Cracking Process
 
-![Hashcat Cracking](images/05-hashcat-cracking.png)
+<img width="903" height="135" alt="5" src="https://github.com/user-attachments/assets/b0bc129c-5708-4665-b17f-76ada0ccbd33" />
 
 ---
 
@@ -134,7 +134,7 @@ This provided an alternative verification of the password recovery process.
 
 ### Screenshot 6 – John the Ripper Cracking Process
 
-![John the Ripper Output](images/06-john-cracking.png)
+<img width="847" height="391" alt="6" src="https://github.com/user-attachments/assets/a7a49360-931b-4a69-8b8b-1882a712b3a8" />
 
 ---
 
@@ -144,7 +144,7 @@ After password recovery, the document was opened successfully using the recovere
 
 ### Screenshot 7 – Successfully Opened Document
 
-![Decrypted Document](images/07-opened-document.png)
+<img width="1398" height="1057" alt="7" src="https://github.com/user-attachments/assets/2bf90da4-c6ba-42ca-8037-4941c3123c6f" />
 
 ---
 
@@ -158,3 +158,12 @@ Successful decryption validated the following:
 - Effective wordlist-based password attack
 
 The examination demonstrated a complete and successful recovery workflow for a Microsoft Office 2013 encrypted document.
+
+## Methodological Note
+
+This examination was conducted during my early practical training period in digital forensics. At the time of the analysis, a cryptographic integrity hash (for example, SHA-256) of the original Microsoft Word document was **not calculated prior to examination**.
+
+The omission occurred because I was still developing my forensic workflow and was not yet aware of the importance of documenting evidence integrity before analysis. My current forensic practice includes hashing evidence files before examination and recording the resulting hash values as part of the chain of custody and integrity verification process.
+
+No retrospective hash values have been added to this report.
+
