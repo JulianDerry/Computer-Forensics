@@ -10,8 +10,19 @@
 | **Tools** | office2john, Hashcat, John the Ripper, rockyou.txt, Linux command-line shell |
 ---
 
+## Overview
 
 This examination documents the recovery of a password-protected Microsoft Office 2013 document through offline password cracking techniques. The process involved identifying the encryption type, extracting the Office hash, selecting the correct cracking mode, and validating successful decryption.
+
+---
+
+## Methodological Note
+
+This examination was conducted during my early practical training period in digital forensics. At the time of the analysis, a cryptographic integrity hash (for example, SHA-256) of the original Microsoft Word document was **not calculated prior to examination**.
+
+The omission occurred because I was still developing my forensic workflow and was not yet aware of the importance of documenting evidence integrity before analysis. My current forensic practice includes hashing evidence files before examination and recording the resulting hash values as part of the chain of custody and integrity verification process.
+
+No retrospective hash values have been added to this report.
 
 ---
 
@@ -158,12 +169,6 @@ Successful decryption validated the following:
 - Effective wordlist-based password attack
 
 The examination demonstrated a complete and successful recovery workflow for a Microsoft Office 2013 encrypted document.
-
-## Methodological Note
-
-This examination was conducted during my early practical training period in digital forensics. At the time of the analysis, a cryptographic integrity hash (for example, SHA-256) of the original Microsoft Word document was **not calculated prior to examination**.
-
-The omission occurred because I was still developing my forensic workflow and was not yet aware of the importance of documenting evidence integrity before analysis. My current forensic practice includes hashing evidence files before examination and recording the resulting hash values as part of the chain of custody and integrity verification process.
 
 No retrospective hash values have been added to this report.
 
