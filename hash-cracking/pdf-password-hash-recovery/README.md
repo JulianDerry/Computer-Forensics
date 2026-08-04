@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Case Reference** | Microsoft Office 2013 Password Recovery |
+| **Case Reference** | PDF Password Hash Recovery |
 | **Image Source** | HIVE CONSULT |
 | **Investigator** | Julian Derry |
 | **Date of Analysis** | ‎February ‎19, ‎2026 |
