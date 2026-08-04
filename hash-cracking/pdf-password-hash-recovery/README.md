@@ -9,6 +9,26 @@
 | **Platform** | Kali Linux |
 | **Tools** | pdf2john.py, Hashcat, pdfinfo |
 ---
+# Table of Contents
+
+1. [Overview](#overview)
+2. [Objective](#objective)
+3. [Methodological Note](#methodological-note)
+4. [Evidence Information](#evidence-information)
+5. [Initial Tool Selection](#initial-tool-selection)
+6. [PDF Hash Extraction](#pdf-hash-extraction)
+7. [Hash Preservation](#hash-preservation)
+8. [Hash Mode Identification](#hash-mode-identification)
+9. [PDF Version Identification](#pdf-version-identification)
+10. [Hashcat Testing](#hashcat-testing)
+11. [Password Recovery](#password-recovery)
+12. [Verification](#verification)
+13. [Tools Used](#tools-used)
+14. [Lessons Learned](#lessons-learned)
+15. [Conclusion](#conclusion)
+16. [Appendix](#appendix)
+
+---
 
 ## Overview
 
@@ -29,25 +49,6 @@ This examination was conducted during my early practical training period in digi
 The omission occurred because I was still developing my forensic workflow and was not yet aware of the importance of documenting evidence integrity before analysis. My current forensic practice includes hashing evidence files before examination and recording the resulting hash values as part of the chain of custody and integrity verification process.
 
 No retrospective hash values have been added to this report.
-
----
-# Table of Contents
-
-1. [Overview](#overview)
-2. [Objective](#objective)
-3. [Evidence Information](#evidence-information)
-4. [Initial Tool Selection](#initial-tool-selection)
-5. [PDF Hash Extraction](#pdf-hash-extraction)
-6. [Hash Preservation](#hash-preservation)
-7. [Hash Mode Identification](#hash-mode-identification)
-8. [PDF Version Identification](#pdf-version-identification)
-9. [Hashcat Testing](#hashcat-testing)
-10. [Password Recovery](#password-recovery)
-11. [Verification](#verification)
-12. [Tools Used](#tools-used)
-13. [Lessons Learned](#lessons-learned)
-14. [Conclusion](#conclusion)
-15. [Appendix](#appendix)
 
 ---
 
