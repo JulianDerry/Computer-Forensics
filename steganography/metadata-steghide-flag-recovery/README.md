@@ -1,11 +1,26 @@
 # PicoCTF Steganography Challenge - Hidden Metadata & Steghide Extraction
 
+Forensic steganographic analysis of a PNG image to identify and recover concealed data embedded within image pixel channels.
+
+## Case Information
+
+| Field | Value |
+|---|---|
+| **Case Reference** | jpg Image Steganography Investigation |
+| **Image Source** | HIVE CONSULT |
+| **Investigator** | Julian Derry |
+| **Date of Analysis** | ‎February ‎17, ‎2026 |
+| **Platform** | Kali Linux |
+
+---
 ## Overview
 
 This challenge involved analyzing an image file (`img.jpg`) to recover a hidden payload and extract the final flag. The investigation focused on metadata analysis, Base64 decoding, and steganographic extraction.
 
 - **Target File:** `img.jpg`
 - **Objective:** Recover the hidden secret and final flag.
+  
+<img width="640" height="640" alt="1" src="https://github.com/user-attachments/assets/0eb2b75e-80c9-494e-af04-1de9ac64aee4" />
 
 ---
 
@@ -16,12 +31,15 @@ The first step was to inspect the image metadata using **ExifTool**.
 ```bash
 exiftool img.jpg
 ```
+<img width="544" height="482" alt="2" src="https://github.com/user-attachments/assets/f9ae41ab-d991-44f9-8355-6d3257cac25b" />
 
 The output revealed a suspicious **Comment** field:
 
 ```text
 c3Rle2hpZGU6cEF6endvcmV9
 ```
+<img width="538" height="62" alt="3" src="https://github.com/user-attachments/assets/4f653c8f-1683-4efb-8232-ceda39244b00" />
+
 
 This string appeared to be Base64-encoded.
 
@@ -34,6 +52,7 @@ Decode the metadata value:
 ```bash
 echo c3Rle2hpZGU6cEF6endvcmV9 | base64 -d
 ```
+<img width="358" height="84" alt="4" src="https://github.com/user-attachments/assets/2902a7cc-50ea-4f58-872a-d3bc401e2611" />
 
 Result:
 
@@ -55,6 +74,7 @@ Decode the second value:
 ```bash
 echo cEF6endvcmV= | base64 -d
 ```
+<img width="358" height="84" alt="4" src="https://github.com/user-attachments/assets/57d3a3b0-dd44-4d15-9ea3-51c37b79f285" />
 
 Result:
 
@@ -73,6 +93,7 @@ Use the recovered passphrase with **Steghide**:
 ```bash
 steghide extract -sf img.jpg
 ```
+<img width="325" height="80" alt="5" src="https://github.com/user-attachments/assets/c57fc5ba-3cc3-4e13-ba68-4cc8a5816e4c" />
 
 When prompted for the passphrase, enter:
 
@@ -91,6 +112,7 @@ Read the contents of the extracted file:
 ```bash
 cat secret.txt
 ```
+<img width="292" height="77" alt="6" src="https://github.com/user-attachments/assets/e9fbffc3-8c3d-45ea-9ad8-44723eb9236a" />
 
 Output:
 
