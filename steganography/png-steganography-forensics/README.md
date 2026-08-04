@@ -8,7 +8,7 @@ Forensic steganographic analysis of a PNG image to identify and recover conceale
 |---|---|
 | **Case Reference** | PNG Image Steganography Investigation |
 | **Image Source** | https://tinyurl.com/2zp9acat |
-| **Investigator** | *Julian Derry* |
+| **Investigator** | Julian Derry |
 | **Date of Analysis** | ‎February ‎25, ‎2026 |
 | **Platform** | Kali Linux |
 
