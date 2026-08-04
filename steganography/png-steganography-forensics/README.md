@@ -168,6 +168,3 @@ It is intended for educational and portfolio purposes within a digital forensics
 
 ---
 
-**Prepared by:** *[Investigator Name]*
-
-**Date:** *[Insert Date]*
