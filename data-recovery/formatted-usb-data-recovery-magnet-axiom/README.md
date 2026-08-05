@@ -8,7 +8,7 @@ Digital forensic examination demonstrating recovery of data from a formatted USB
 |---|---|
 | **Case Reference** | DFIR-2026-RMF-011 |
 | **Image Source** | Personal USB flash drive 8GB-Generic Vendor |
-| **Analyst** | Julian Derry |
+| **Investigator** | Julian Derry |
 | **Date of Analysis** | ‎February ‎09, ‎2026 |
 | **Time of Analysis** | ‎4:45 PM GMT |
 | **Platform** | Windows |
